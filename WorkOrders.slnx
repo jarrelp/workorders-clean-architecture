@@ -1,9 +1,12 @@
 <Solution>
   <Folder Name="/src/">
+    <Project Path="src/WorkOrders.Api/WorkOrders.Api.csproj" />
     <Project Path="src/WorkOrders.Application/WorkOrders.Application.csproj" />
     <Project Path="src/WorkOrders.Domain/WorkOrders.Domain.csproj" />
+    <Project Path="src/WorkOrders.Infrastructure/WorkOrders.Infrastructure.csproj" />
   </Folder>
   <Folder Name="/tests/">
+    <Project Path="tests/WorkOrders.Api.Tests/WorkOrders.Api.Tests.csproj" />
     <Project Path="tests/WorkOrders.Application.Tests/WorkOrders.Application.Tests.csproj" />
     <Project Path="tests/WorkOrders.Domain.Tests/WorkOrders.Domain.Tests.csproj" />
   </Folder>
