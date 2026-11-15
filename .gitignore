@@ -1,0 +1,24 @@
+# Build output
+bin/
+obj/
+artifacts/
+
+# Test results and coverage reports
+TestResults/
+coverage*.xml
+coverage*.json
+
+# Local SQLite databases
+*.db
+*.db-shm
+*.db-wal
+
+# Editors and operating systems
+.vs/
+.idea/
+.vscode/
+*.user
+*.suo
+*.swp
+.DS_Store
+Thumbs.db

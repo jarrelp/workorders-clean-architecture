@@ -1,0 +1,2 @@
+# Normalize line endings; .editorconfig expects LF everywhere.
+* text=auto eol=lf
