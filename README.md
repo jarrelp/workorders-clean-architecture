@@ -1,5 +1,7 @@
 # Work orders: a Clean Architecture sample in .NET 10
 
+[![CI](https://github.com/jarrelp/workorders-clean-architecture/actions/workflows/ci.yml/badge.svg)](https://github.com/jarrelp/workorders-clean-architecture/actions/workflows/ci.yml)
+
 A small back end for field service work orders. A customer reports a problem, a technician is
 scheduled, time and materials are logged on site, and the job is completed or cancelled.
 
