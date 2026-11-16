@@ -7,7 +7,7 @@ I wrote this as a code sample for clients who want to see how I build a .NET ser
 they hire me. It is deliberately small, but complete: the business rules sit in a domain model
 without framework code, each use case has its own handler, the database sits behind interfaces,
 and every rule has a test. The build treats every warning as an error, and CI checks build,
-tests and formatting on every push.
+tests, formatting and the container image on every push.
 
 Where to look, depending on your time:
 
@@ -292,7 +292,9 @@ dotnet test --collect:"XPlat Code Coverage"
   (central package management).
 - [`.github/workflows/ci.yml`](.github/workflows/ci.yml): on every push and pull request to `main`,
   restore, a Release build with warnings as errors, the tests with coverage (uploaded as a build
-  artifact) and `dotnet format --verify-no-changes`. The workflow token is read-only.
+  artifact) and `dotnet format --verify-no-changes`. A second job builds the Docker image, starts
+  a container, and calls `/health` and `POST /work-orders` on it, so the image is known to start
+  and to write to its database. The workflow token is read-only.
 
 ## License
 
